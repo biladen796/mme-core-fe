@@ -20,7 +20,7 @@ const Menu: React.FC<MenuProps> = ({ items }) => {
     //     </li>
     //   ))}
     // </ul>
-    <ResponsiveAppBar />
+    <ResponsiveAppBar items={items} />
   );
 };
 

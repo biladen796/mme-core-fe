@@ -1,8 +1,12 @@
+'use client';
+import { billy } from '@/assets/images';
+import Footer from '@/shared-components/footer';
 import Menu from '@/shared-components/menu';
+import styled from '@emotion/styled';
 
 const HomeLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <section>
+    <HomeContainer>
       <Menu
         items={[
           {
@@ -28,8 +32,17 @@ const HomeLayout = ({ children }: { children: React.ReactNode }) => {
         ]}
       />
       {children}
-    </section>
+      <Footer />
+    </HomeContainer>
   );
 };
 
 export default HomeLayout;
+
+const HomeContainer = styled.section`
+  background-image: url(${billy.src});
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top left;
+  min-height: 100vh;
+`;
