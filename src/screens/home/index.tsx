@@ -8,8 +8,8 @@ import {
   TeleIcon,
   XIcon,
   backgroundBanner,
-  billyMain,
 } from '@/assets/images';
+import { homeContent } from '@/screens/home/constants';
 import styled from '@emotion/styled';
 import { Button, Container, Stack } from '@mui/material';
 import Image from 'next/image';
@@ -29,8 +29,8 @@ const Home: React.FC = () => {
             alignItems={'center'}
             height={'100%'}>
             <Image
-              src={billyMain}
-              alt="Cute Billy"
+              src={homeContent.banner.image}
+              alt="Banner Image"
               style={{
                 width: 350,
                 height: 350,
@@ -44,8 +44,7 @@ const Home: React.FC = () => {
                 maxWidth: '50%',
                 marginTop: 20,
               }}>
-              $BILLY is the cutest dog on Solana, on a mission to be worth
-              billyons and billyons!
+              {homeContent.banner.bannerText}
             </StyledTextContent>
           </Stack>
         </Container>
@@ -60,17 +59,17 @@ const Home: React.FC = () => {
               style={{
                 maxWidth: '60%',
               }}>
-              Buy some BILLY
+              Buy some {homeContent.token.tokenName}
             </StyledButton>
             <StyledTextContent
               style={{
                 maxWidth: '60%',
                 margin: '20px 0',
               }}>
-              3B5wuUrMEi5yATD7on46hKfej3pfmd7t1RKgrsN3pump
+              {homeContent.token.contractAddress}
             </StyledTextContent>
             <Stack flexWrap={'wrap'} direction={'row'}>
-              <StyledLink href="blank">
+              <StyledLink href={homeContent.links.teleLink}>
                 <Image
                   src={TeleIcon}
                   style={{
@@ -80,7 +79,7 @@ const Home: React.FC = () => {
                   alt="tele"
                 />
               </StyledLink>
-              <StyledLink href="blank">
+              <StyledLink href={homeContent.links.xLink}>
                 <Image
                   style={{
                     width: 28,
@@ -90,7 +89,7 @@ const Home: React.FC = () => {
                   alt="X"
                 />
               </StyledLink>
-              <StyledLink href="blank">
+              <StyledLink href={homeContent.links.dexscreenerLink}>
                 <Image
                   style={{
                     width: 28,
@@ -100,7 +99,7 @@ const Home: React.FC = () => {
                   alt="dexscreener"
                 />
               </StyledLink>
-              <StyledLink href="blank">
+              <StyledLink href={homeContent.links.dextoolsLink}>
                 <Image
                   style={{
                     width: 28,
@@ -112,7 +111,7 @@ const Home: React.FC = () => {
               </StyledLink>
             </Stack>
             <Stack flexWrap={'wrap'} direction={'row'} mt={4}>
-              <StyledLink href="blank">
+              <StyledLink href={homeContent.links.birdEyeLink}>
                 <Image
                   style={{
                     width: 28,
@@ -122,7 +121,7 @@ const Home: React.FC = () => {
                   alt="BirdEye"
                 />
               </StyledLink>
-              <StyledLink href="blank">
+              <StyledLink href={homeContent.links.coingeckoLink}>
                 <Image
                   style={{
                     width: 28,
@@ -132,7 +131,7 @@ const Home: React.FC = () => {
                   alt="CoinGecko"
                 />
               </StyledLink>
-              <StyledLink href="blank">
+              <StyledLink href={homeContent.links.coinmarketcapLink}>
                 <Image
                   style={{
                     width: 28,
@@ -163,7 +162,8 @@ const Home: React.FC = () => {
             </StyledTextContent>
             <StyledTextContent>&bull; No presale</StyledTextContent>
             <StyledTextContent>
-              &bull; Only way to get BILLY is to buy it on the open market
+              &bull; Only way to get {homeContent.token.tokenName} is to buy it
+              on the open market
             </StyledTextContent>
           </div>
         </Container>
