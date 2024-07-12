@@ -147,15 +147,32 @@ const Home: React.FC = () => {
         </Container>
       </div>
       <div>
-        <Container>
-          <div>Tokenomic content</div>
+        <Container
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            marginTop: 70,
+            marginBottom: 70,
+          }}>
+          <div
+            style={{
+              maxWidth: '60%',
+            }}>
+            <StyledTextContent>
+              &bull; 100% locked liquidity pool
+            </StyledTextContent>
+            <StyledTextContent>&bull; No presale</StyledTextContent>
+            <StyledTextContent>
+              &bull; Only way to get BILLY is to buy it on the open market
+            </StyledTextContent>
+          </div>
         </Container>
       </div>
-      <div>
+      {/* <div>
         <Container>
           <div>FAQS content</div>
         </Container>
-      </div>
+      </div> */}
     </div>
   );
 };

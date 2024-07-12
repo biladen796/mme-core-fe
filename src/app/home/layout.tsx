@@ -21,14 +21,14 @@ const HomeLayout = ({ children }: { children: React.ReactNode }) => {
           },
           {
             id: 3,
-            label: 'Tokenomic',
+            label: 'Info',
             url: '/tokenomic',
           },
-          {
-            id: 4,
-            label: 'FAQS',
-            url: '/faqs',
-          },
+          // {
+          //   id: 4,
+          //   label: 'FAQS',
+          //   url: '/faqs',
+          // },
         ]}
       />
       {children}

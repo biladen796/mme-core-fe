@@ -10,7 +10,16 @@ const Footer = () => {
     //     </li>
     //   ))}
     // </ul>
-    <footer>Footer</footer>
+    <footer
+      style={{
+        textAlign: 'center',
+        fontStyle: 'italic',
+        fontSize: 16,
+        fontWeight: 500,
+        height: '1.5rem',
+      }}>
+      @2024 Billy. All Rights Reserved
+    </footer>
   );
 };
 
