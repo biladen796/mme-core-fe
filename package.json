@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "NEXT_BUILD_ENV=production next build",
     "start": "next start",
     "lint": "next lint",
     "eslint-fix": "eslint --fix .",
@@ -23,6 +23,7 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
