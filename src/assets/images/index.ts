@@ -8,6 +8,8 @@ import CoinGeckoIcon from './coingecko.svg';
 import CoinMarketCapIcon from './coinmarketcap.svg';
 import DexScreenerIcon from './dexscreener.svg';
 import DexToolsIcon from './dextools.svg';
+import SolIcon from './Sol.png';
+import WalletIcon from './icon-wallet.svg';
 
 export {
   backgroundBanner,
@@ -20,4 +22,6 @@ export {
   CoinMarketCapIcon,
   DexScreenerIcon,
   DexToolsIcon,
+  SolIcon,
+  WalletIcon,
 };

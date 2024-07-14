@@ -5,9 +5,11 @@ import {
   CoinMarketCapIcon,
   DexScreenerIcon,
   DexToolsIcon,
+  SolIcon,
   TeleIcon,
   XIcon,
   backgroundBanner,
+  billyMain,
 } from '@/assets/images';
 import { homeContent } from '@/screens/home/constants';
 import styled from '@emotion/styled';
@@ -15,6 +17,7 @@ import { Button, Container, Stack } from '@mui/material';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import AccountBalanceWalletOutlinedIcon from '@mui/icons-material/AccountBalanceWalletOutlined';
 
 const Home: React.FC = () => {
   return (
@@ -144,6 +147,115 @@ const Home: React.FC = () => {
             </Stack>
           </Stack>
         </Container>
+        <Container>
+          <Stack justifyContent={'center'} alignItems={'center'}>
+            <div
+              style={{
+                width: '60%',
+              }}>
+              <StyledTextContent>OR SWAP HERE</StyledTextContent>
+              <div>
+                <StyledTokenContainer>
+                  <StyledTokenHeader
+                    direction={'row'}
+                    justifyContent={'space-between'}>
+                    <div>From</div>
+                    <Stack
+                      direction={'row'}
+                      justifyContent={'flex-end'}
+                      alignItems={'center'}>
+                      <AccountBalanceWalletOutlinedIcon />: 0<div>Max</div>
+                      <div>50%</div>
+                    </Stack>
+                  </StyledTokenHeader>
+                  <StyledTokenBody
+                    direction={'row'}
+                    justifyContent={'space-between'}>
+                    <StyledTokenName>
+                      <Image
+                        src={billyMain}
+                        alt=""
+                        style={{
+                          width: 28,
+                          height: 28,
+                          borderRadius: 20,
+                          marginRight: 4,
+                        }}
+                      />
+                      BILLY
+                    </StyledTokenName>
+                    <Stack direction={'row'} justifyContent={'flex-end'}>
+                      <div>Input</div>
+                      <div>Price: 0$</div>
+                    </Stack>
+                  </StyledTokenBody>
+                </StyledTokenContainer>
+                <div>To icon</div>
+                <StyledTokenContainer>
+                  <StyledTokenHeader
+                    direction={'row'}
+                    justifyContent={'space-between'}>
+                    <div>To</div>
+                    <Stack
+                      direction={'row'}
+                      justifyContent={'space-between'}
+                      alignItems={'center'}>
+                      <AccountBalanceWalletOutlinedIcon />: 0<div>Max</div>
+                      <div>50%</div>
+                    </Stack>
+                  </StyledTokenHeader>
+                  <StyledTokenBody
+                    direction={'row'}
+                    justifyContent={'space-between'}>
+                    <StyledTokenName>
+                      <Image
+                        src={SolIcon}
+                        alt=""
+                        style={{
+                          width: 28,
+                          height: 28,
+                          borderRadius: 20,
+                          marginRight: 4,
+                        }}
+                      />
+                      SOL
+                    </StyledTokenName>
+                    <Stack direction={'row'} justifyContent={'space-between'}>
+                      <div>Input</div>
+                      <div>Price: 0$</div>
+                    </Stack>
+                  </StyledTokenBody>
+                </StyledTokenContainer>
+                <div>
+                  <div>
+                    <Stack direction={'row'} justifyContent={'space-between'}>
+                      <div>1 BILLY ≈ 1 SOL</div>
+                      <div>Circle icon</div>
+                    </Stack>
+                    <Stack direction={'row'} justifyContent={'space-between'}>
+                      <div>Minimum Received</div>
+                      <div>1 SOL</div>
+                    </Stack>
+                    <Stack direction={'row'} justifyContent={'space-between'}>
+                      <div>Price Impact</div>
+                      <div>{'<0.01%'}</div>
+                    </Stack>
+                    <Stack direction={'row'} justifyContent={'space-between'}>
+                      <div>Order Routing</div>
+                      <div>Raydium AMM</div>
+                    </Stack>
+                    <Stack direction={'row'} justifyContent={'space-between'}>
+                      <div>Estimated Fees</div>
+                      <div>0.04652938 BILLY</div>
+                    </Stack>
+                  </div>
+                  <div>Less info/ More info</div>
+                </div>
+                <div>Connect / SWap button</div>
+              </div>
+            </div>
+          </Stack>
+        </Container>
       </div>
       <div id="#info">
         <Container
@@ -210,4 +322,33 @@ const StyledLink = styled(Link)`
   justify-content: center;
   align-items: center;
   margin: 0px 15px;
+`;
+
+const StyledTokenContainer = styled.div`
+  background-color: var(--background-swap-token-container);
+  border-radius: 20px;
+  overflow: hidden;
+`;
+
+const StyledTokenBody = styled(Stack)`
+  background-color: var(--background-swap-token-body);
+  padding: 10px 40px;
+  border-radius: 20px;
+`;
+
+const StyledTokenHeader = styled(Stack)`
+  padding: 10px 40px;
+  border-radius: 20px;
+`;
+
+const StyledTokenName = styled.div`
+  font-size: 18px;
+  font-weight: 600;
+  padding: 8px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-button-color);
 `;
