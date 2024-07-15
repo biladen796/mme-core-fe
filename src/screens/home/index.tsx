@@ -5,11 +5,9 @@ import {
   CoinMarketCapIcon,
   DexScreenerIcon,
   DexToolsIcon,
-  SolIcon,
   TeleIcon,
   XIcon,
   backgroundBanner,
-  billyMain,
 } from '@/assets/images';
 import { homeContent } from '@/screens/home/constants';
 import styled from '@emotion/styled';
@@ -17,7 +15,6 @@ import { Button, Container, Stack } from '@mui/material';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import AccountBalanceWalletOutlinedIcon from '@mui/icons-material/AccountBalanceWalletOutlined';
 
 const Home: React.FC = () => {
   return (
@@ -147,7 +144,7 @@ const Home: React.FC = () => {
             </Stack>
           </Stack>
         </Container>
-        <Container>
+        {/* <Container>
           <Stack justifyContent={'center'} alignItems={'center'}>
             <div
               style={{
@@ -255,7 +252,7 @@ const Home: React.FC = () => {
               </div>
             </div>
           </Stack>
-        </Container>
+        </Container> */}
       </div>
       <div id="#info">
         <Container
