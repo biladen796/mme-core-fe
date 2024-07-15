@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "NEXT_BUILD_ENV=production next build",
     "start": "next start",
     "lint": "next lint",
     "eslint-fix": "eslint --fix .",

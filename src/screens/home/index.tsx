@@ -49,7 +49,7 @@ const Home: React.FC = () => {
           </Stack>
         </Container>
       </StyledMainBanner>
-      <div>
+      <div id="#buy">
         <Container>
           <Stack
             justifyContent={'center'}
@@ -145,7 +145,7 @@ const Home: React.FC = () => {
           </Stack>
         </Container>
       </div>
-      <div>
+      <div id="#info">
         <Container
           style={{
             display: 'flex',

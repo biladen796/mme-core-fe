@@ -37,7 +37,17 @@ function ResponsiveAppBar({ items }: { items: MenuItem[] }) {
               spacing={12}
               justifyContent={'center'}>
               {items.map((item) => (
-                <StyledMenuButton key={item.id}>{item.label}</StyledMenuButton>
+                <StyledMenuButton
+                  key={item.id}
+                  onClick={() => {
+                    const element = document.getElementById(item.url);
+                    element?.scrollIntoView({
+                      behavior: 'smooth',
+                      block: 'end',
+                    });
+                  }}>
+                  {item.label}
+                </StyledMenuButton>
               ))}
             </Stack>
           </Container>

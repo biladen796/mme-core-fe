@@ -17,12 +17,12 @@ const HomeLayout = ({ children }: { children: React.ReactNode }) => {
           {
             id: 2,
             label: 'Swap',
-            url: '/swap',
+            url: '#buy',
           },
           {
             id: 3,
             label: 'Info',
-            url: '/tokenomic',
+            url: '#info',
           },
           // {
           //   id: 4,
