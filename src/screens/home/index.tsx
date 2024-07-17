@@ -8,6 +8,7 @@ import {
   TeleIcon,
   XIcon,
   backgroundBanner,
+  bcatGif,
 } from '@/assets/images';
 import { homeContent } from '@/screens/home/constants';
 import styled from '@emotion/styled';
@@ -58,6 +59,9 @@ const Home: React.FC = () => {
             <StyledButton
               style={{
                 maxWidth: '60%',
+              }}
+              onClick={() => {
+                window.open(homeContent.links.raydium, '_blank');
               }}>
               Buy some {homeContent.token.tokenName}
             </StyledButton>
@@ -69,7 +73,7 @@ const Home: React.FC = () => {
               {homeContent.token.contractAddress}
             </StyledTextContent>
             <Stack flexWrap={'wrap'} direction={'row'}>
-              <StyledLink href={homeContent.links.teleLink}>
+              <StyledLink href={homeContent.links.teleLink} target="_blank">
                 <Image
                   src={TeleIcon}
                   style={{
@@ -79,7 +83,7 @@ const Home: React.FC = () => {
                   alt="tele"
                 />
               </StyledLink>
-              <StyledLink href={homeContent.links.xLink}>
+              <StyledLink href={homeContent.links.xLink} target="_blank">
                 <Image
                   style={{
                     width: 28,
@@ -89,7 +93,9 @@ const Home: React.FC = () => {
                   alt="X"
                 />
               </StyledLink>
-              <StyledLink href={homeContent.links.dexscreenerLink}>
+              <StyledLink
+                href={homeContent.links.dexscreenerLink}
+                target="_blank">
                 <Image
                   style={{
                     width: 28,
@@ -99,7 +105,7 @@ const Home: React.FC = () => {
                   alt="dexscreener"
                 />
               </StyledLink>
-              <StyledLink href={homeContent.links.dextoolsLink}>
+              <StyledLink href={homeContent.links.dextoolsLink} target="_blank">
                 <Image
                   style={{
                     width: 28,
@@ -111,7 +117,7 @@ const Home: React.FC = () => {
               </StyledLink>
             </Stack>
             <Stack flexWrap={'wrap'} direction={'row'} mt={4}>
-              <StyledLink href={homeContent.links.birdEyeLink}>
+              <StyledLink href={homeContent.links.birdEyeLink} target="_blank">
                 <Image
                   style={{
                     width: 28,
@@ -121,7 +127,9 @@ const Home: React.FC = () => {
                   alt="BirdEye"
                 />
               </StyledLink>
-              <StyledLink href={homeContent.links.coingeckoLink}>
+              <StyledLink
+                href={homeContent.links.coingeckoLink}
+                target="_blank">
                 <Image
                   style={{
                     width: 28,
@@ -131,7 +139,9 @@ const Home: React.FC = () => {
                   alt="CoinGecko"
                 />
               </StyledLink>
-              <StyledLink href={homeContent.links.coinmarketcapLink}>
+              <StyledLink
+                href={homeContent.links.coinmarketcapLink}
+                target="_blank">
                 <Image
                   style={{
                     width: 28,
@@ -144,115 +154,6 @@ const Home: React.FC = () => {
             </Stack>
           </Stack>
         </Container>
-        {/* <Container>
-          <Stack justifyContent={'center'} alignItems={'center'}>
-            <div
-              style={{
-                width: '60%',
-              }}>
-              <StyledTextContent>OR SWAP HERE</StyledTextContent>
-              <div>
-                <StyledTokenContainer>
-                  <StyledTokenHeader
-                    direction={'row'}
-                    justifyContent={'space-between'}>
-                    <div>From</div>
-                    <Stack
-                      direction={'row'}
-                      justifyContent={'flex-end'}
-                      alignItems={'center'}>
-                      <AccountBalanceWalletOutlinedIcon />: 0<div>Max</div>
-                      <div>50%</div>
-                    </Stack>
-                  </StyledTokenHeader>
-                  <StyledTokenBody
-                    direction={'row'}
-                    justifyContent={'space-between'}>
-                    <StyledTokenName>
-                      <Image
-                        src={billyMain}
-                        alt=""
-                        style={{
-                          width: 28,
-                          height: 28,
-                          borderRadius: 20,
-                          marginRight: 4,
-                        }}
-                      />
-                      BILLY
-                    </StyledTokenName>
-                    <Stack direction={'row'} justifyContent={'flex-end'}>
-                      <div>Input</div>
-                      <div>Price: 0$</div>
-                    </Stack>
-                  </StyledTokenBody>
-                </StyledTokenContainer>
-                <div>To icon</div>
-                <StyledTokenContainer>
-                  <StyledTokenHeader
-                    direction={'row'}
-                    justifyContent={'space-between'}>
-                    <div>To</div>
-                    <Stack
-                      direction={'row'}
-                      justifyContent={'space-between'}
-                      alignItems={'center'}>
-                      <AccountBalanceWalletOutlinedIcon />: 0<div>Max</div>
-                      <div>50%</div>
-                    </Stack>
-                  </StyledTokenHeader>
-                  <StyledTokenBody
-                    direction={'row'}
-                    justifyContent={'space-between'}>
-                    <StyledTokenName>
-                      <Image
-                        src={SolIcon}
-                        alt=""
-                        style={{
-                          width: 28,
-                          height: 28,
-                          borderRadius: 20,
-                          marginRight: 4,
-                        }}
-                      />
-                      SOL
-                    </StyledTokenName>
-                    <Stack direction={'row'} justifyContent={'space-between'}>
-                      <div>Input</div>
-                      <div>Price: 0$</div>
-                    </Stack>
-                  </StyledTokenBody>
-                </StyledTokenContainer>
-                <div>
-                  <div>
-                    <Stack direction={'row'} justifyContent={'space-between'}>
-                      <div>1 BILLY ≈ 1 SOL</div>
-                      <div>Circle icon</div>
-                    </Stack>
-                    <Stack direction={'row'} justifyContent={'space-between'}>
-                      <div>Minimum Received</div>
-                      <div>1 SOL</div>
-                    </Stack>
-                    <Stack direction={'row'} justifyContent={'space-between'}>
-                      <div>Price Impact</div>
-                      <div>{'<0.01%'}</div>
-                    </Stack>
-                    <Stack direction={'row'} justifyContent={'space-between'}>
-                      <div>Order Routing</div>
-                      <div>Raydium AMM</div>
-                    </Stack>
-                    <Stack direction={'row'} justifyContent={'space-between'}>
-                      <div>Estimated Fees</div>
-                      <div>0.04652938 BILLY</div>
-                    </Stack>
-                  </div>
-                  <div>Less info/ More info</div>
-                </div>
-                <div>Connect / SWap button</div>
-              </div>
-            </div>
-          </Stack>
-        </Container> */}
       </div>
       <div id="#info">
         <Container
@@ -277,11 +178,16 @@ const Home: React.FC = () => {
           </div>
         </Container>
       </div>
-      {/* <div>
-        <Container>
-          <div>FAQS content</div>
+      <div>
+        <Container
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            marginBottom: 70,
+          }}>
+          <Image width="320" height="320" alt="" src={bcatGif} />
         </Container>
-      </div> */}
+      </div>
     </div>
   );
 };
@@ -294,7 +200,7 @@ const StyledMainBanner = styled.div`
 `;
 
 const StyledTextContent = styled.div`
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); */
   font-size: 28px;
   font-weight: 500;
   line-height: 1.4;
@@ -304,6 +210,7 @@ const StyledButton = styled(Button)`
   background: var(--background-button-color);
   color: var(--text-color);
   padding: 10px 20px;
+  font-weight: 700;
   font-size: 24px;
   :hover {
     background: var(--background-button-color-hover);

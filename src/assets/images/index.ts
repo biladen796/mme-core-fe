@@ -10,6 +10,12 @@ import DexScreenerIcon from './dexscreener.svg';
 import DexToolsIcon from './dextools.svg';
 import SolIcon from './Sol.png';
 import WalletIcon from './icon-wallet.svg';
+import bcatFace from './bcat-face.png';
+import bcatFaceOrg from './bcat-face.jpg';
+import bcatIcon from './bliss-coin-cat-icon.jpg';
+import bcatVideo from './BLiss_Cat_video.mp4';
+import bcatGif from './BLiss_Cat-gif.gif';
+import bcatFacePink from './bcat-face-pink.png';
 
 export {
   backgroundBanner,
@@ -24,4 +30,10 @@ export {
   DexToolsIcon,
   SolIcon,
   WalletIcon,
+  bcatFace,
+  bcatIcon,
+  bcatVideo,
+  bcatFacePink,
+  bcatFaceOrg,
+  bcatGif,
 };

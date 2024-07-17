@@ -6,6 +6,18 @@ const nextConfig = {
   output: "export",
   reactStrictMode: true,
   images: { unoptimized: true },
+  webpack: (config) => {
+    // Add a rule for handling .mp4 video files
+    config.module.rules.push({
+      test: /\.mp4$/,
+      type: 'asset/resource',
+      generator: {
+        filename: 'static/media/[hash][ext][query]'
+      }
+    });
+
+    return config;
+  },
   // webpack: (config) => {
   //   // Grab the existing rule that handles SVG imports
   //   const fileLoaderRule = config.module.rules.find((rule) =>

@@ -1,4 +1,5 @@
 'use client';
+import { homeContent } from '@/screens/home/constants';
 import React from 'react';
 
 const Footer = () => {
@@ -18,7 +19,7 @@ const Footer = () => {
         fontWeight: 500,
         height: '1.5rem',
       }}>
-      @2024 Billy. All Rights Reserved
+      @2024 {homeContent.token.tokenName}. All Rights Reserved
     </footer>
   );
 };

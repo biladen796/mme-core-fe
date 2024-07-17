@@ -38,13 +38,12 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
-  --text-color-hover: #524034;
-  --text-color: #fff;
-  --background-color: #fff;
-  --background-button-color: #524034;
-  --background-button-color-hover: #524034d5;
-  --background-button-color-hover: #524034d5;
-  --background-header: #A5A06F;
+  --text-color-hover: #52021bb7;
+  --text-color: #52021b;
+  --background-color: #f35b8bbd;
+  --background-button-color: #f17795;
+  --background-button-color-hover: #f17795;
+  --background-header: #f17795;
   --background-swap-token-container: #A5A06F;
   --background-swap-token-body: #856652;
 }
