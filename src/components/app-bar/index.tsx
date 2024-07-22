@@ -1,5 +1,5 @@
 'use client';
-import { bcatFace } from '@/assets/images';
+import { catFace } from '@/assets/images';
 import { homeContent } from '@/screens/home/constants';
 import styled from '@emotion/styled';
 import { Container, Grid, Stack } from '@mui/material';
@@ -31,7 +31,7 @@ function ResponsiveAppBar({ items }: { items: MenuItem[] }) {
             <Link href={'/'}>
               <Stack direction="row" spacing={1} alignItems={'center'}>
                 <Image
-                  src={bcatFace}
+                  src={catFace}
                   alt=""
                   style={{
                     width: 50,

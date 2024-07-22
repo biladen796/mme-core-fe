@@ -1,11 +1,11 @@
-import { bcatFaceOrg, bcatVideo } from '@/assets/images';
+import { bcatVideo, catFace } from '@/assets/images';
 
 const tokenName = 'BCAT';
 const contractAddress = '3B5wuUrMEi5yATD7on46hKfej3pfmd7t1RKgrsN3pump';
 
 export const homeContent = {
   banner: {
-    image: bcatFaceOrg,
+    image: catFace,
     video: bcatVideo,
     bannerText: `$${tokenName} is the happinest cat on Solana, on a mission to be worth
               billyons and billyons!`,

@@ -1,5 +1,5 @@
 'use client';
-import { bcatFacePink } from '@/assets/images';
+import { catFacePink } from '@/assets/images';
 import Footer from '@/shared-components/footer';
 import Menu from '@/shared-components/menu';
 import styled from '@emotion/styled';
@@ -40,7 +40,7 @@ const HomeLayout = ({ children }: { children: React.ReactNode }) => {
 export default HomeLayout;
 
 const HomeContainer = styled.section`
-  background-image: url(${bcatFacePink.src});
+  background-image: url(${catFacePink.src});
   background-repeat: repeat;
   background-size: 68px 68px;
   background-position: top left;

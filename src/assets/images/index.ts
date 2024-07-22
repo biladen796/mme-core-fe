@@ -16,6 +16,8 @@ import bcatIcon from './bliss-coin-cat-icon.jpg';
 import bcatVideo from './BLiss_Cat_video.mp4';
 import bcatGif from './BLiss_Cat-gif.gif';
 import bcatFacePink from './bcat-face-pink.png';
+import catFace from './cat-face.jpg';
+import catFacePink from './cat-face-pink.png';
 
 export {
   backgroundBanner,
@@ -36,4 +38,6 @@ export {
   bcatFacePink,
   bcatFaceOrg,
   bcatGif,
+  catFace,
+  catFacePink,
 };
