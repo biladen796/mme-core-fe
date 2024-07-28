@@ -35,6 +35,7 @@ const Home: React.FC = () => {
               style={{
                 width: 350,
                 height: 350,
+                marginTop: 16,
                 border: '5px solid white',
                 borderRadius: 20,
               }}
