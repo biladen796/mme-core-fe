@@ -3,9 +3,7 @@ const isBuildProductEnv = process.env.NEXT_BUILD_ENV === 'production';
 
 const nextConfig = {
   basePath: isBuildProductEnv ? "/mme-core-fe" : "",
-  output: "export",
   reactStrictMode: true,
-  images: { unoptimized: true },
   webpack: (config) => {
     // Add a rule for handling .mp4 video files
     config.module.rules.push({
