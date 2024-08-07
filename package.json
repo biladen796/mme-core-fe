@@ -8,6 +8,7 @@
     "build": "NEXT_BUILD_ENV=production-heroku next build",
     "build:git": "NEXT_BUILD_ENV=production next build",
     "start": "next start",
+    "start:heroku": "next start -p $PORT",
     "lint": "next lint",
     "eslint-fix": "eslint --fix .",
     "predeploy": "npm run build",
