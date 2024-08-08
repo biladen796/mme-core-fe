@@ -62,7 +62,7 @@ const Home: React.FC = () => {
                 maxWidth: '60%',
               }}
               onClick={() => {
-                window.open(homeContent.links.raydium, '_blank');
+                window.open(homeContent.links.pumpfun, '_blank');
               }}>
               Buy some {homeContent.token.tokenName}
             </StyledButton>
