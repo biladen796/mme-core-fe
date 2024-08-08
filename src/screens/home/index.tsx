@@ -169,7 +169,7 @@ const Home: React.FC = () => {
               maxWidth: '60%',
             }}>
             <StyledTextContent>
-              &bull; 100% locked liquidity pool
+              &bull; 100% fairlaunch via pump.fun
             </StyledTextContent>
             <StyledTextContent>&bull; No presale</StyledTextContent>
             <StyledTextContent>
